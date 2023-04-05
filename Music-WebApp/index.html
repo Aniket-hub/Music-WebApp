@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - My musics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="1" class="brand"><img src="logo.png" alt="SpotifyLogo">Spotify</li>
+            <li id="homeItem">Home</li>
+            <li id="aboutItem">About</li>
+            <li id="contactItem">Contact Us</li>
+        </ul>
+    </nav>
+
+    <div id="aboutSection">
+        <h2>About Us <br><br></h2>
+        <p>Hello and Welcome to my music app. <br> This website is designed by Aniket Panigrahi belonging from Bhubaneswar, Odisha. <br>
+            Hope you are enjoying my music app!!!
+        </p>
+    </div>
+    <div id="contactSection">
+        <h1>Contact Us <br><br></h1>
+        <i class="fa-regular fa-envelope">
+            aniketpanigrahi2001@gmail.com
+        </i><br>
+        <i class="fa-light fa-phone-volume">
+            +91-9178658057
+        </i><br>
+        <i class="fa-brands fa-linkedin">
+            https://www.linkedin.com/in/aniket-panigrahi-700ab7217/
+        </i><br>
+    </div>
+    
+    <div class="container">
+        <div class="songList">
+            <h1>Best of Justin Beiber</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/1.jpg" alt="1">
+                    <span class="songName">Let me Love you</span>
+                    <span class="songlistplay"><span class="timeStamp">03:26 <i id="0" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/2.jpg" alt="2">
+                    <span class="songName">As Long as you Love</span>
+                    <span class="songlistplay"><span class="timeStamp">05:51 <i id="1" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/3.jpg" alt="3">
+                    <span class="songName">BoyFriend</span>
+                    <span class="songlistplay"><span class="timeStamp">03:30 <i id="2" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/4.jpg" alt="4">
+                    <span class="songName">Confident</span>
+                    <span class="songlistplay"><span class="timeStamp">06:05 <i id="3" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/5.jpg" alt="5">
+                    <span class="songName">Sorry</span>
+                    <span class="songlistplay"><span class="timeStamp">03:19 <i id="4" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/6.jpg" alt="6">
+                    <span class="songName">Baby</span>
+                    <span class="songlistplay"><span class="timeStamp">03:39 <i id="5" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/7.jpg" alt="7">
+                    <span class="songName">Ghost</span>
+                    <span class="songlistplay"><span class="timeStamp">03:32 <i id="6" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/8.jpg" alt="8">
+                    <span class="songName">I'll Show You</span>
+                    <span class="songlistplay"><span class="timeStamp">03:20 <i id="7" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/9.jpg" alt="9">
+                    <span class="songName">Intentions</span>
+                    <span class="songlistplay"><span class="timeStamp">03:44 <i id="8" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/10.jpg" alt="10">
+                    <span class="songName">Stay</span>
+                    <span class="songlistplay"><span class="timeStamp">02:19 <i id="9" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="Bottom">
+        <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fa-solid fa-3x fa-forward-step" id="next"></i>
+        </div>
+
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="GIF" id="gif"> <span id="masterSongDisplay">Let me Love you</span>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2fa341f14c.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
